@@ -1,4 +1,6 @@
 import {Aurelia, autoinject} from 'aurelia-framework';
+import 'arrive';
+import 'bootstrap-material-design';
 
 @autoinject()
 export class Login {
@@ -25,5 +27,9 @@ export class Login {
 
     userIsLoggedIn(){
         return this.isLoggedIn;
+    }
+
+    activate (){
+        $.material.init();
     }
 }
