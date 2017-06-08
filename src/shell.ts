@@ -6,7 +6,7 @@ export class App {
   public router: Router;
 
   public configureRouter(config: RouterConfiguration, router: Router) {
-    config.title = 'Aurelia';
+    config.title = 'AchieveLegend';
     config.map([
       { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' }
     ]);
