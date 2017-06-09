@@ -4,15 +4,21 @@ import 'bootstrap-material-design';
 
 @autoinject()
 export class Login {
-    username = '';
-    password = '';
-    isLoggedIn = false;
+    username: string;
+    password: string;
+    aurelia: Aurelia;
+    isLoggedIn: boolean;
 
-    constructor(){
-     }
+    constructor(aurelia: Aurelia){
+        this.aurelia = aurelia;
+        this.isLoggedIn = true;
+    }
 
     submit(){
-        return true;
+        if(this.validation(this.username, this.password)){
+            console.log('congratz');
+            this.aurelia.setRoot('shell');
+        };
     }
 
     validation = function(username: string, password: string){

@@ -23,3 +23,8 @@
       material: Material;
   }
 14. run gulp watch
+
+## Links
+https://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap
+https://stackoverflow.com/questions/33458274/how-to-switch-between-login-page-and-app-with-aurelia
+https://auth0.com/blog/creating-your-first-aurelia-app-from-authentication-to-calling-an-api/
