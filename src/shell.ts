@@ -6,7 +6,7 @@ export class App {
   public router: Router;
 
   public configureRouter(config: RouterConfiguration, router: Router) {
-    config.title = 'AchieveLegend';
+    config.title = 'LifeChecks';
     config.map([
       { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' }
     ]);

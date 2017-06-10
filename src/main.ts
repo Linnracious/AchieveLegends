@@ -25,9 +25,9 @@ export function configure(aurelia: Aurelia) {
 
   aurelia.start().then(() => {
     if(login.userIsLoggedIn()){
-      aurelia.setRoot('shell')
+      aurelia.setRoot('shell');
     } else {
-      aurelia.setRoot('login')
+      aurelia.setRoot('login');
     }
   });
 }
